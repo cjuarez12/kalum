@@ -1,11 +1,11 @@
-# payara
+# Acerca del Repositorio
 Repositorio para almacenar todo lo relacionado a Payara
 
 # Plugins necesarios:
 
 en la siguiente ruta copiar el jar mysql -> /opt/payara/appserver/glassfish/domains/domain1/lib
 
-# iniciar el contenedor y crear el siguiente volumen
+# Iniciar el contenedor y crear el siguiente volumen
 
 Path Local: storage-container
 Path Container: /opt/payara/appserver/glassfish/domains/domain1/lib
