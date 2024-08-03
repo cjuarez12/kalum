@@ -12,7 +12,11 @@ Path Container: /opt/payara/appserver/glassfish/domains/domain1/lib
 
 # Comando para iniciar docker
 
-docker run -d -p 4848:4848 -p 8080:8080 --name=payara-server-dev-2024 -v storage-container:/opt/payara/appserver/glassfish/domains/domain1/lib  payara/server-full:5.2022.3-jdk17
+docker run -d -p 4848:4848 -p 8080:8080 --name=payara-server-dev-2024 -v /storage-container/payara/:/opt/payara/appserver/glassfish/domains/domain1/lib payara/server-full:5.2022.3-jdk17
+
+docker run -d --rm --name mysql -e MYSQL_ROOT_PASSWORD=Kalum -p 3306:3306 -v /storage-container/mysql/:/var/lib/mysql mysql:8.0
+  
+
 
 # Url para llegar a consola
 
